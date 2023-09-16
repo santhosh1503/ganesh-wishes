@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cinzel', serif;
+}
+
+@font-face {
+font-family: myFirstFont;
+src: url(GanpatiSymbolys.TTF);
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background:linear-gradient(to top,#b71212c8,#0c44eabc,rgb(100, 90, 90)); 
+	background-size: 100% 100%;
+}
+
+header h2{
+	text-align: center;
+	word-spacing: 10px;
+	font-size: 4em;
+	font-weight: 600;
+	animation:  ganpatiji 1s infinite;
+}
+
+header h2 span {
+	font-family: myFirstFont;
+}
+
+@keyframes ganpatiji{
+	0%{color:rgba(19, 223, 43, 0.7);}
+	30%{color: rgb(228, 13, 49);}
+	50%{color: #FC8704;}
+	75%{color: #db11b9;}
+	100%{color: rgb(8, 110, 189);}
+}
+
+.centerimg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.centerimg h3{
+	width: 107%;
+	color: #000;
+	text-align: center;
+	font-size: 1.6em;
+	font-weight: 600;
+	word-spacing: 10px;
+}
+
+@media (max-width: 640px){
+
+header h2{
+
+	word-spacing: 5px;
+	font-size: 3em;
+	}
+
+.centerimg{
+	margin-top: 60px;
+}
+
+.centerimg img{
+	width: 250px;
+}
+
+.centerimg h3{
+	font-size: 1.2em;
+	word-spacing: 0px;
+	width: 100%;
+}
+}
